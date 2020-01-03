@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Squiggle from './components/squiggle';
+import Squiggle from './components/Squiggle';
 
 interface Skill {
 	name: string,

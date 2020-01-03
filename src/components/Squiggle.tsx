@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Squiggle.css';
+
 const Squiggle: React.FC = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 4" style={{ height: '20px', width: '400px' }}>

@@ -1,0 +1,16 @@
+.squiggle {
+    animation: shift 0.3s linear infinite;
+}
+@keyframes shift {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .squiggle {
+        animation: none;
+    }
+}
