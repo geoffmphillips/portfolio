@@ -1,12 +1,12 @@
 .App {
-  text-align: center;
-  background-color: hsl(120, 50%, 95.3%);
+  background-color: hsl(124, 58%, 98%);
   color: hsl(121, 100%, 11.4%);
 }
 
-.brand-bar {
-	height: 10px;
+.header {
 	width: 100%;
-	background-color: hsl(121, 100%, 11.4%);
+	padding: 20px;
+	display: flex;
+	justify-content: flex-end;
 }
 
