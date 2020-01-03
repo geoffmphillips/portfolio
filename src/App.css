@@ -1,12 +1,78 @@
-.App {
-  background-color: hsl(124, 58%, 98%);
-  color: hsl(121, 100%, 11.4%);
+*:focus {
+    outline: none !important;
 }
 
-.header {
-	width: 100%;
+#App {
+  background-color: hsl(124, 58%, 98%);
+  color: hsl(121, 100%, 11.4%);
+  width: 100%;
+  transition: background-color 0.2s ease-in-out,
+			  color 0.2s ease-in-out;
+}
+
+#App .header {
 	padding: 20px;
 	display: flex;
 	justify-content: flex-end;
+}
+
+#App .header .dark-mode-button {
+	background-color: #215C1E;
+	padding: 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 9999px;
+	border: 2px solid hsl(124, 58%, 98%);
+	transition: background-color ease-in-out 0.2s, 
+				box-shadow ease-in-out 0.1s;
+}
+
+#App .header .dark-mode-button:hover {
+	background-color: #1F361C;
+	cursor: pointer;
+}
+
+#App .header .dark-mode-button:focus {
+	background-color: #1F361C;
+	border: 2px solid hsl(124, 58%, 98%);
+	box-shadow: 0px 0px 0px 4px #1F361C;
+}
+
+#App .header .dark-mode-button .moon {
+	fill: hsla(41, 100%, 64%, 1);
+	transition: fill ease-in-out 0.2s;
+	height: 35px;
+	width: 35px;
+}
+#App .header .dark-mode-button:hover .moon {
+	fill: rgba(255, 171, 15, 1);
+}
+#App .header .dark-mode-button:focus .moon {
+	fill: rgba(255, 171, 15, 1);
+}
+
+#App.dark-mode {
+	background-color: hsl(121, 100%, 11.4%) !important;
+	color: hsl(124, 58%, 98%) !important;
+}
+
+#App.dark-mode .header .dark-mode-button {
+	background-color: hsla(41, 100%, 64%, 1);
+	padding: 5px;
+	border-radius: 9999px;
+}
+
+#App.dark-mode .header .dark-mode-button:hover {
+	background-color: rgba(255, 171, 15, 1);
+}
+
+#App.dark-mode .header .dark-mode-button:focus {
+	background-color: rgba(255, 171, 15, 1);
+	border: 2px solid hsl(124, 58%, 98%);
+	box-shadow: 0px 0px 0px 4px rgba(255, 171, 15, 1);
+}
+
+#App.dark-mode .header .dark-mode-button .moon {
+	fill: whitesmoke;
 }
 
