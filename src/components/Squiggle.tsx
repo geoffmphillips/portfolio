@@ -20,9 +20,11 @@ const getD = function(length: number): string {
 
 const Squiggle = ({ color = '#ffab0f', length = 6, height = '20px', width = '400px', viewbox = '0 0 200 4' }: SquiggleProps) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewbox} style={{ height, width }}>
-            <path fill="none" stroke={color} stroke-width="1" className="squiggle" d={getD(length)}/>
-        </svg>
+		<div className='squiggle-container'>
+	        <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewbox} style={{ height, width }}>
+	            <path fill="none" stroke={color} stroke-width="1" className="squiggle" d={getD(length)}/>
+	        </svg>
+		</div>
     )
 }
 
