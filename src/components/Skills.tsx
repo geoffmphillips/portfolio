@@ -21,15 +21,21 @@ const skills: Skill[] = [
 ]
 
 const Skills: React.FC = () => (
-	<section>
-		<h3>Skills</h3>
-		<div className='skills-container'>
+	<section id='skills-container'>
+		<div className='row'>
+			<h3>Skills</h3>
+		</div>
+		<div className='row skills-row'>
 			{ skills.map((skill, index) => (
-				<div key={index + 100}>
-					<h4>{skill.name}</h4>
-					{ skill.tools.map(function(tool, index) {
-						return <span className='tool' key={index + 1000}>{tool}</span>
-					})}
+				<div key={index + 100} className='column'>
+					<div>
+						<h4>{skill.name}</h4>
+					</div>
+					<div className='tool-container'>
+						{ skill.tools.map(function(tool, index) {
+							return <span className='tool' key={index + 1000}>{tool}</span>
+						})}
+					</div>
 				</div>
 			))}
 		</div>
