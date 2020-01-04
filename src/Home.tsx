@@ -1,26 +1,7 @@
 import React from 'react';
 
+import Skills from './components/Skills';
 import Squiggle from './components/Squiggle';
-
-interface Skill {
-	name: string,
-	tools: string[],
-}
-
-const skills: Skill[] = [
-	{
-		name: "Languages",
-		tools: [ "Javascript", "Typescript", "Ruby", "SQL" ]
-	},
-	{
-		name: "Frameworks & Tools",
-		tools: [ "React", "React Native", "Redux", "Gatsby", "Jest", "Vue", "Ruby on Rails", "RSpec", "jQuery", "Node", "socket.io", "Stripe" ]
-	},
-	{
-		name: "Systems & Databases",
-		tools: [ "SQL", "PostgreSQL", "MongoDB", "Ansible", "Docker", "Git", "Github" ]
-	}
-]
 
 interface Role {
 	title: string,
@@ -75,13 +56,13 @@ const employers: Employment[] = [
 
 const Home: React.FC = () => (
     <div>
-		<div>
+		<section>
 			this is the part where I talk about myself.
 			
 			{/* Web developer with a passion for clean code and solving problems. Self-motivated, driven by pushing the boundaries of my knowledge. With experience working as an accounting team lead, I know know that collaboration and teamwork will bring out everyone's best. */}
-		</div>
+		</section>
 		<Squiggle />
-		<div>
+		<section>
 			<h3>Employment</h3>
 			{ employers.map(function(employer, index) {
 				return (
@@ -102,19 +83,9 @@ const Home: React.FC = () => (
 					</React.Fragment>
 				)	
 			})}
-		</div>
+		</section>
 		<Squiggle />
-		<div>
-			<h3>Skills</h3>
-			{ skills.map((skill, index) => (
-				<div key={index + 100}>
-					<h4>{skill.name}</h4>
-					{ skill.tools.map(function(tool, index) {
-						return <span key={index + 1000}>{tool}</span>
-					})}
-				</div>
-			)) }
-		</div>
+		<Skills />
 		<Squiggle />
 		<div>
 			Projects
