@@ -2,6 +2,16 @@
     outline: none !important;
 }
 
+*::selection {
+	background-color: tomato;
+	color: hsl(124, 58%, 98%);
+}
+
+.dark-mode .tool::selection {
+	background-color: hsl(124, 58%, 98%);
+	color: #215C1E;
+}
+
 #App {
   background-color: hsl(124, 58%, 98%);
   color: hsl(121, 100%, 11.4%);
@@ -21,7 +31,7 @@
 	padding: 5px;
 	height: 50px;
 	width: 50px;
-	border-radius: 9999px;
+	border-radius: 999px;
 	border: 2px solid hsl(124, 58%, 98%);
 	transition: background-color ease-in-out 0.2s, 
 				box-shadow ease-in-out 0.1s;
