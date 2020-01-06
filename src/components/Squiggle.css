@@ -23,3 +23,8 @@
         animation: none;
     }
 }
+@media print {
+	.squiggle {
+        animation: none;
+    }
+}
