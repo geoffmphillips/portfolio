@@ -8,7 +8,7 @@ interface Skill {
 const skills: Skill[] = [
 	{
 		name: "Languages",
-		tools: [ "Javascript", "Typescript", "Ruby", "SQL" ]
+		tools: [ "Javascript", "Typescript", "Ruby", "HTML5", "CSS3/SASS" ]
 	},
 	{
 		name: "Frameworks & Tools",
@@ -16,14 +16,14 @@ const skills: Skill[] = [
 	},
 	{
 		name: "Systems & Databases",
-		tools: [ "SQL", "PostgreSQL", "MongoDB", "Ansible", "Docker", "Git", "Github" ]
+		tools: [ "SQL", "NoSQL", "PostgreSQL", "MongoDB", "Ansible", "Docker", "Git", "Github" ]
 	}
 ]
 
 const Skills: React.FC = () => (
 	<section id='skills-container'>
-		<div className='row'>
-			<h3>Skills</h3>
+		<div className='row justify-center'>
+			<em>Tools I like to work with</em>
 		</div>
 		<div className='row skills-row'>
 			{ skills.map((skill, index) => (
