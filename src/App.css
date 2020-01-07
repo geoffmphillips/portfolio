@@ -7,9 +7,31 @@
 	color: hsl(124, 58%, 98%);
 }
 
+p {
+	font-family: 'Heebo', sans-serif;	
+}
+
+em {
+	text-align: center;
+}
+
+em::selection {
+	background-color: #215C1E;
+	color: hsla(41, 100%, 64%, 1);
+}
+
 .dark-mode .tool::selection {
 	background-color: hsl(124, 58%, 98%);
+	color: tomato;
+}
+
+.dark-mode em::selection {
+	background-color: hsla(41, 100%, 64%, 1);
 	color: #215C1E;
+}
+
+.justify-center {
+	justify-content: center;
 }
 
 #App {
@@ -61,18 +83,53 @@
 	fill: rgba(255, 171, 15, 1);
 }
 
+#App .description-container {
+	width: 100%;	
+	display: flex;
+	justify-content: center;
+}
+#App .description-container .description {
+	width: 70%;	
+	font-size: 1.2em;
+}
+
+#App .description-container .description:first-child:first-letter {
+	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+	font-size: 4em;
+	padding: 0px 15px;
+	border-top: 4px solid tomato;
+	border-left: 4px solid tomato;
+	line-height: 1em;
+}
+
 #App #skills-container {
 	display: flex;
 	flex-direction: column;
+	margin: 2em;
 }
+
 #App #skills-container .row {
 	display: flex;
 }
+
+#App #skills-container .row h4 {
+	padding-left: 0.55em;
+	font-weight: 500;
+	margin: 0.75em 0;
+}
+#App #skills-container .row em {
+	background-color: tomato;
+	color:hsl(124, 58%, 98%);
+	margin-bottom: 1em;
+}
+
 #App #skills-container .row .column {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	width: 33%;
+	padding: 0 1em;
+	margin: 0 0 1em 0;
 }
 
 #App #skills-container .row .column .tool-container {
@@ -129,12 +186,53 @@
 	background-color: rgb(255, 131, 15);
 }
 
+#App .footer {
+	padding: 1.5em;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#App .footer .block {
+	height: 4em;
+	width: 4em;
+	margin-right: 15%;
+	border-bottom: 4px solid tomato;
+	border-right: 4px solid tomato;
+}
+
 @media screen and (max-width: 767px) {
+	#App .description-container .description {
+		width: 100%;	
+		padding: 1em;
+		font-size: 1.2em;
+		line-height: 2em;
+	}
+	
+	#App .description-container .description:first-child:first-letter {
+		font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+		font-size: 3.25em;
+		padding: 0px 15px;
+		border-top: 4px solid tomato;
+		border-left: 4px solid tomato;
+		line-height: 1em;
+	}
+	
+	#App #skills-container {
+		margin: 2em 1em;
+	}
+	
 	#App #skills-container .row {
 		flex-direction: column;
 	}
 	
 	#App #skills-container .row .column {
 		width: 100%;
+		padding: 0;
+	}
+	
+	#App .footer .block {
+		height: 3em;
+		width: 3em;
+		margin-right: 0;
 	}
 }
