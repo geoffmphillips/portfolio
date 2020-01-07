@@ -57,9 +57,18 @@ const employers: Employment[] = [
 const Home: React.FC = () => (
     <div>
 		<section>
-			this is the part where I talk about myself.
+			<div className='description-container'>
+			<p className='description' >
+				Hey there, my name is Geoff. I build things. Sometimes I break things. I'm always trying to learn - new tools, new approaches to problems, new skills outside of tech. 
+			</p>
 			
 			{/* Web developer with a passion for clean code and solving problems. Self-motivated, driven by pushing the boundaries of my knowledge. With experience working as an accounting team lead, I know know that collaboration and teamwork will bring out everyone's best. */}
+			</div>
+			<div>
+				<p>
+					And maybe something else could go here too? Maybe there's something else to say
+				</p>	
+			</div>
 		</section>
 		<Squiggle />
 		<section>
@@ -87,12 +96,15 @@ const Home: React.FC = () => (
 		<Squiggle />
 		<Skills />
 		<Squiggle />
-		<div>
+		<section>
 			Projects
-		</div>
+		</section>
 		<Squiggle />
-		<div>
+		<section>
 			Education
+		</section>
+		<div className='footer'>
+			<div className='block'></div>
 		</div>
     </div>
 );
