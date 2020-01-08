@@ -34,6 +34,19 @@ em::selection {
 	justify-content: center;
 }
 
+.space-between {
+	justify-content: space-between;
+}
+
+section {
+	padding: 1em 0;
+}
+
+.row {
+	display: flex;
+}
+
+
 #App {
   background-color: hsl(124, 58%, 98%);
   color: hsl(121, 100%, 11.4%);
@@ -88,28 +101,25 @@ em::selection {
 	display: flex;
 	justify-content: center;
 }
-#App .description-container .description {
-	width: 70%;	
+#App .description {
+	width: 50%;	
 	font-size: 1.2em;
+	line-height: 2em;
 }
 
-#App .description-container .description:first-child:first-letter {
+#App .description-container .description.first:first-child:first-letter {
 	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-	font-size: 4em;
+	font-size: 3.25em;
 	padding: 0px 15px;
 	border-top: 4px solid tomato;
 	border-left: 4px solid tomato;
 	line-height: 1em;
 }
 
-#App #skills-container {
+#App #skills-container, #App #employment-container {
 	display: flex;
 	flex-direction: column;
 	margin: 2em;
-}
-
-#App #skills-container .row {
-	display: flex;
 }
 
 #App #skills-container .row h4 {
@@ -117,10 +127,12 @@ em::selection {
 	font-weight: 500;
 	margin: 0.75em 0;
 }
-#App #skills-container .row em {
+#App .row em {
 	background-color: tomato;
 	color:hsl(124, 58%, 98%);
 	margin-bottom: 1em;
+	padding: 0.25em;
+	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
 
 #App #skills-container .row .column {
@@ -149,8 +161,58 @@ em::selection {
 	transition: ease-in-out background-color 0.2s;
 	font-weight: 600;
 }
+
 #App #skills-container .row .column .tool-container .tool:hover {
 	background-color: hsl(121, 100%, 11.4%);
+}
+
+#App #employment-container {
+	align-items: center;
+}
+
+#App #employment-container .employer {
+	width: 50%;
+	display: grid;
+}
+
+#App #employment-container .employer > p {
+	width: max-content;
+	font-size: 1.2em;
+	border-bottom: 1px solid #215C1E;
+	font-weight: 300;
+	justify-self: center;
+}
+
+#App #employment-container .employer > p:hover {
+	border-bottom: 1px solid transparent;
+	background-image: url(/assets/squiggle.svg);
+	background-repeat: repeat-x;
+	background-position-y: 0.90em;
+}
+
+#App #employment-container .employer .row {
+	align-items: baseline;
+}
+
+#App #employment-container .employer .row .title {
+	font-size: 1.1em;
+	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+#App #employment-container .employer .row .time {
+	font-family: 'Heebo', sans-serif;
+	color: #215C1E;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+#App #employment-container .employer ul {
+	margin-bottom: 2.25em;
+}
+
+#App #employment-container .employer ul li {
+	margin: 0.25em 0;
 }
 
 #App.dark-mode {
@@ -195,7 +257,7 @@ em::selection {
 #App .footer .block {
 	height: 4em;
 	width: 4em;
-	margin-right: 15%;
+	margin-right: 25%;
 	border-bottom: 4px solid tomato;
 	border-right: 4px solid tomato;
 }
@@ -208,13 +270,23 @@ em::selection {
 		line-height: 2em;
 	}
 	
-	#App .description-container .description:first-child:first-letter {
-		font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-		font-size: 3.25em;
-		padding: 0px 15px;
-		border-top: 4px solid tomato;
-		border-left: 4px solid tomato;
-		line-height: 1em;
+	#App #employment-container {
+		margin: 1em;
+	}
+	
+	#App #employment-container > .row {
+		width: 100%;
+	}
+	#App #employment-container > .row > em {
+		width: 100%;
+	}
+	
+	#App #employment-container .employer {
+		width: 100%;
+	}
+	
+	#App #employment-container .employer .row {
+		flex-direction: column;
 	}
 	
 	#App #skills-container {
