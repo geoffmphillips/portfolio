@@ -1,0 +1,25 @@
+<svg height='20px' width='100px' xmlns="http://www.w3.org/2000/svg" x="0px" y="18px" viewBox='0 0 200 4'><path fill="none" stroke='#215C1E' stroke-width="2" class='squiggle' d='M 0, 0.5 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3 c 5, 0, 5, 3, 10, 3 s 5, -3,10,-3 c 5, 0, 5, 3, 10, 3 s 5, -3, 10, -3'/>
+<style type='text/css'>
+.squiggle {
+    animation: shift 0.3s linear infinite;
+}
+@keyframes shift {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .squiggle {
+        animation: none;
+    }
+}
+@media print {
+	.squiggle {
+        animation: none;
+    }
+}
+</style>
+</svg>
