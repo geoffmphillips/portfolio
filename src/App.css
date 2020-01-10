@@ -19,6 +19,10 @@ em::selection {
 	background-color: #215C1E;
 	color: hsla(41, 100%, 64%, 1);
 }
+em.time::selection {
+	background-color: tomato;
+	color: hsl(124, 58%, 98%);
+}
 
 .dark-mode .tool::selection {
 	background-color: hsl(124, 58%, 98%);
@@ -28,6 +32,10 @@ em::selection {
 .dark-mode em::selection {
 	background-color: hsla(41, 100%, 64%, 1);
 	color: #215C1E;
+}
+.dark-mode em.time::selection {
+	background-color: tomato;
+	color: hsl(124, 58%, 98%);
 }
 
 .justify-center {
