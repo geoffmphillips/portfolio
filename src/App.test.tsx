@@ -9,8 +9,8 @@ const WrappedApp: React.FC = () => (
 	</BrowserRouter>	
 );
 
-test('renders learn react link', () => {
+test('renders hello world!', () => {
 	const { getByText } = render(<WrappedApp />);
-	const linkElement = getByText(/learn react/i);
-	expect(linkElement).toBeInTheDocument();
+	const helloElement = getByText(/Hello world!/i);
+	expect(helloElement).toBeInTheDocument();
 });

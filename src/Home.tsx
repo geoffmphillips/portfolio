@@ -8,7 +8,7 @@ import Squiggle from './components/Squiggle';
 const Home: React.FC = () => (
     <div>
 		<section>
-			<div className='description-container'>
+			<div className='description-container' data-testid="test-header">
 				<p className='description first'>
 					Hello world! My name is Geoff. I am a coder. I build things. First I break things. I'm always trying to learn - new tools, new approaches to problems, new skills outside of tech. 
 				</p>
