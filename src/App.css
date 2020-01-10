@@ -248,12 +248,34 @@ section {
 	fill: whitesmoke;
 }
 
+#App.dark-mode .employment-container .employer > p {
+	border-bottom: 1px solid hsl(124, 58%, 98%);
+}
+
+#App.dark-mode .employment-container .employer > p:hover {
+	border-bottom: 1px solid transparent;
+	background-image: url(/assets/squiggle-dark-mode.svg);
+}
+
+#App.dark-mode .employment-container .employer .row em.time {
+	color: hsl(120, 12%, 61%);
+}
+
 #App.dark-mode #skills-container .row .column .tool-container .tool {
 	color: hsl(124, 58%, 98%);
 	background-color: rgba(255, 171, 15, 1);
 }
 #App.dark-mode #skills-container .row .column .tool-container .tool:hover {
 	background-color: rgb(255, 131, 15);
+}
+
+#App.dark-mode #skills-container .row .column .skill-name {
+	border-bottom: 1px solid hsl(124, 58%, 98%);
+}
+
+#App.dark-mode #skills-container .row .column .skill-name:hover {
+	border-bottom: 1px solid transparent;
+	background-image: url(/assets/squiggle-dark-mode.svg);
 }
 
 #App .footer {
