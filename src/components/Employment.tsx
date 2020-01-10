@@ -52,7 +52,7 @@ const employers: Employment[] = [
 ]
 
 const Employment: React.FC = () => (
-	<section id='employment-container'>
+	<section className='employment-container'>
 		<div className='row justify-center'>
 			<em>Where I've worked</em>
 		</div>
