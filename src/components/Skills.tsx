@@ -28,8 +28,8 @@ const Skills: React.FC = () => (
 		<div className='row skills-row'>
 			{ skills.map((skill, index) => (
 				<div key={index + 100} className='column'>
-					<div>
-						<h4>{skill.name}</h4>
+					<div className='skill-name-container'>
+						<h4 className='skill-name'>{skill.name}</h4>
 					</div>
 					<div className='tool-container'>
 						{ skill.tools.map(function(tool, index) {
