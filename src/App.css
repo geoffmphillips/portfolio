@@ -8,7 +8,7 @@
 }
 
 p {
-	font-family: 'Heebo', sans-serif;	
+	font-family: 'Heebo', sans-serif;
 }
 
 em {
@@ -50,6 +50,10 @@ section {
 	padding: 1em 0;
 }
 
+.m-t-16 {
+	margin-top: 16px;
+}
+
 .row {
 	display: flex;
 }
@@ -83,6 +87,12 @@ section {
 #App .header .dark-mode-button:hover {
 	background-color: #1F361C;
 	cursor: pointer;
+}
+
+#App.dark-mode .header .dark-mode-button:active {
+	transform: scale(0.98);
+	background-color: rgb(31, 49, 22);
+	box-shadow: 0px 0px 0px 4px rgb(31, 49, 22);
 }
 
 #App .header .dark-mode-button:focus {
@@ -124,7 +134,7 @@ section {
 	line-height: 1em;
 }
 
-#App #skills-container, #App #employment-container {
+#App #skills-container, #App .employment-container {
 	display: flex;
 	flex-direction: column;
 	margin: 2em;
@@ -152,6 +162,27 @@ section {
 	margin: 0 0 1em 0;
 }
 
+#App #skills-container .row .column .skill-name-container {
+	display: grid;
+}
+
+#App #skills-container .row .column .skill-name {
+	width: max-content;
+	justify-self: center;
+	padding: 0;
+	font-size: 1.2em;
+	line-height: 1.45em;
+	border-bottom: 1px solid #215C1E;
+	font-weight: 300;
+}
+
+#App #skills-container .row .column .skill-name:hover {
+	border-bottom: 1px solid transparent;
+	background-image: url(/assets/squiggle.svg);
+	background-repeat: repeat-x;
+	background-position-y: 0.90em;
+}
+
 #App #skills-container .row .column .tool-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -161,6 +192,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
+	font-family: 'Heebo', sans-serif;
 	padding: 5px 15px;
 	color: hsl(124, 58%, 98%);
 	background-color: #215C1E;
@@ -174,16 +206,16 @@ section {
 	background-color: hsl(121, 100%, 11.4%);
 }
 
-#App #employment-container {
+#App .employment-container {
 	align-items: center;
 }
 
-#App #employment-container .employer {
+#App .employment-container .employer {
 	width: 50%;
 	display: grid;
 }
 
-#App #employment-container .employer > p {
+#App .employment-container .employer > p {
 	width: max-content;
 	font-size: 1.2em;
 	border-bottom: 1px solid #215C1E;
@@ -191,23 +223,23 @@ section {
 	justify-self: center;
 }
 
-#App #employment-container .employer > p:hover {
+#App .employment-container .employer > p:hover {
 	border-bottom: 1px solid transparent;
 	background-image: url(/assets/squiggle.svg);
 	background-repeat: repeat-x;
 	background-position-y: 0.90em;
 }
 
-#App #employment-container .employer .row {
+#App .employment-container .employer .row {
 	align-items: baseline;
 }
 
-#App #employment-container .employer .row .title {
+#App .employment-container .employer .row .title {
 	font-size: 1.1em;
 	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
 
-#App #employment-container .employer .row .time {
+#App .employment-container .employer .row .time {
 	font-family: 'Heebo', sans-serif;
 	color: #215C1E;
 	background: none;
@@ -215,11 +247,11 @@ section {
 	margin: 0;
 }
 
-#App #employment-container .employer ul {
+#App .employment-container .employer ul {
 	margin-bottom: 2.25em;
 }
 
-#App #employment-container .employer ul li {
+#App .employment-container .employer ul li {
 	margin: 0.25em 0;
 }
 
@@ -236,6 +268,12 @@ section {
 
 #App.dark-mode .header .dark-mode-button:hover {
 	background-color: rgba(255, 171, 15, 1);
+}
+
+#App.dark-mode .header .dark-mode-button:active {
+	transform: scale(0.98);
+	background-color: rgb(223, 145, 2);
+	box-shadow: 0px 0px 0px 4px rgb(223, 145, 2);
 }
 
 #App.dark-mode .header .dark-mode-button:focus {
@@ -300,22 +338,22 @@ section {
 		line-height: 2em;
 	}
 	
-	#App #employment-container {
+	#App .employment-container {
 		margin: 1em;
 	}
 	
-	#App #employment-container > .row {
+	#App .employment-container > .row {
 		width: 100%;
 	}
-	#App #employment-container > .row > em {
-		width: 100%;
-	}
-	
-	#App #employment-container .employer {
+	#App .employment-container > .row > em {
 		width: 100%;
 	}
 	
-	#App #employment-container .employer .row {
+	#App .employment-container .employer {
+		width: 100%;
+	}
+	
+	#App .employment-container .employer .row {
 		flex-direction: column;
 	}
 	
