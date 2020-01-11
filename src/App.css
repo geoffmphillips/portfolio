@@ -178,7 +178,7 @@ section {
 
 #App #skills-container .row .column .skill-name:hover {
 	border-bottom: 1px solid transparent;
-	background-image: url(/assets/squiggle.svg);
+	background-image: url(/portfolio/assets/squiggle.svg);
 	background-repeat: repeat-x;
 	background-position-y: 0.90em;
 }
@@ -195,7 +195,7 @@ section {
 	font-family: 'Heebo', sans-serif;
 	padding: 5px 15px;
 	color: hsl(124, 58%, 98%);
-	background-color: #215C1E;
+	background-color: rgb(37, 124, 33);
 	border-radius: 999px;
 	margin: 0.5rem;
 	transition: ease-in-out background-color 0.2s;
@@ -203,7 +203,7 @@ section {
 }
 
 #App #skills-container .row .column .tool-container .tool:hover {
-	background-color: hsl(121, 100%, 11.4%);
+	background-color: #215C1E;
 }
 
 #App .employment-container {
@@ -225,7 +225,7 @@ section {
 
 #App .employment-container .employer > p:hover {
 	border-bottom: 1px solid transparent;
-	background-image: url(/assets/squiggle.svg);
+	background-image: url(/portfolio/assets/squiggle.svg);
 	background-repeat: repeat-x;
 	background-position-y: 0.90em;
 }
@@ -253,6 +253,32 @@ section {
 
 #App .employment-container .employer ul li {
 	margin: 0.25em 0;
+}
+
+#App .project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+#App .project .project-image {
+	object-fit: cover;
+}
+
+#App .project .title {
+	width: max-content;
+	font-size: 1.2em;
+	border-bottom: 1px solid #215C1E;
+	font-weight: 300;
+	justify-self: center;
+}
+
+#App .project .title:hover {
+	border-bottom: 1px solid transparent;
+	background-image: url(/portfolio/assets/squiggle.svg);
+	background-repeat: repeat-x;
+	background-position-y: 0.90em;
 }
 
 #App.dark-mode {
@@ -292,7 +318,7 @@ section {
 
 #App.dark-mode .employment-container .employer > p:hover {
 	border-bottom: 1px solid transparent;
-	background-image: url(/assets/squiggle-dark-mode.svg);
+	background-image: url(/portfolio/assets/squiggle-dark-mode.svg);
 }
 
 #App.dark-mode .employment-container .employer .row em.time {
@@ -313,7 +339,12 @@ section {
 
 #App.dark-mode #skills-container .row .column .skill-name:hover {
 	border-bottom: 1px solid transparent;
-	background-image: url(/assets/squiggle-dark-mode.svg);
+	background-image: url(/portfolio/assets/squiggle-dark-mode.svg);
+}
+
+#App.dark-mode .project .title:hover {
+	border-bottom: 1px solid transparent;
+	background-image: url(/portfolio/assets/squiggle-dark-mode.svg);
 }
 
 #App .footer {

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Education from './components/Education';
 import Employment from './components/Employment';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Squiggle from './components/Squiggle';
 
@@ -23,9 +24,7 @@ const Home: React.FC = () => (
 		<Squiggle />
 		<Employment />
 		<Skills />
-		<section>
-			Projects
-		</section>
+		<Projects />
 		<Education />
 		<Squiggle />
 		<div className='footer'>
