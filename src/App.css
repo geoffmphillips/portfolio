@@ -278,7 +278,7 @@ section {
 	border-bottom: 1px solid transparent;
 	background-image: url(/portfolio/assets/squiggle.svg);
 	background-repeat: repeat-x;
-	background-position-y: 0.90em;
+	background-position-y: 0.80em;
 }
 
 #App.dark-mode {
