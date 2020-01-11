@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface Education { 
-	name: String,
-	description: String,
-	graduatedOn: String,
+	name: string,
+	description: string,
+	graduatedOn: string,
 }
 
 const schools: Education[] = [
@@ -26,7 +26,7 @@ const Education: React.FC = () => (
 		</div>
 		{ schools.map(function(school, index) {
 			return (
-				<div className='employer m-t-16' key={index+200}>
+				<div className='employer m-t-16' key={index+300}>
 					<div className='row space-between'>
 						<strong className='title'>{ school.name }</strong>
 						<em className='time'>{ school.graduatedOn }</em>

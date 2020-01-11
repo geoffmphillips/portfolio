@@ -17,7 +17,7 @@ const employers: Employment[] = [
 		roles: [
 			{
 				title: 'Junior Web Developer',
-				time: 'Dec. 2018 to Current',
+				time: 'December 2018 to Current',
 				notes: [
 					'ansible? Designed and built payment and subscription managment microservice',
 					'Used React Native to build mobile app',
