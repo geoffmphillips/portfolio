@@ -26,7 +26,6 @@ const Home: React.FC = () => (
 		<Skills />
 		<Projects />
 		<Education />
-		<Squiggle />
 		<div className='footer'>
 			<div className='block'></div>
 		</div>
