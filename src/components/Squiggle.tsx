@@ -18,7 +18,7 @@ const getD = function(length: number): string {
 	return d;
 }
 
-const Squiggle = ({ color = '#ffab0f', length = 6, height = '20px', width = '400px', viewbox = '0 0 200 4' }: SquiggleProps) => {
+const Squiggle = ({ color = '#ffab0f', length = 8, height = '10px', width = '300px', viewbox = '0 0 225 4' }: SquiggleProps) => {
     return (
 		<div className='squiggle-container'>
 	        <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewbox} style={{ height, width }}>
