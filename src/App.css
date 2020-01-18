@@ -15,6 +15,11 @@ em {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 em::selection {
 	background-color: #215C1E;
 	color: hsla(41, 100%, 64%, 1);
@@ -265,6 +270,10 @@ section {
 
 #App .project .project-image {
 	object-fit: cover;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	box-shadow: 0px 2px 3px 1px hsla(0, 0%, 0%, 0.2);
 }
 
 #App .project .title {
