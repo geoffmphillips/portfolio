@@ -19,7 +19,7 @@ const employers: Employment[] = [
 				title: 'Junior Web Developer',
 				time: 'December 2018 to Current',
 				notes: [
-					'Designed and implemented payment/subscription managment microservice',
+					'Designed and implemented payment/subscription management microservice',
 					'Built mobile app with React Native',
 					'Implemented Ansible playbook to keep certain client data backed up to AWS for the client to download',
 				]
