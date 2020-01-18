@@ -19,9 +19,9 @@ const employers: Employment[] = [
 				title: 'Junior Web Developer',
 				time: 'December 2018 to Current',
 				notes: [
-					'ansible? Designed and built payment and subscription managment microservice',
-					'Used React Native to build mobile app',
-					'Other tools used include React, Redux, Node, jQuery, MongoDB, Stripe, Bootstrap, socket.io',
+					'Designed and implemented payment/subscription managment microservice',
+					'Built mobile app with React Native',
+					'Implemented Ansible playbook to keep certain client data backed up to AWS for the client to download',
 				]
 			}
 		]
@@ -33,18 +33,18 @@ const employers: Employment[] = [
 				title: "Accounting Team Lead",
 				time: "May 2016 to May 2018",
 				notes: [
-					'Created team-specific metrics and dashboards enabling team members to track their performance',
-					'Worked with sales team to create and maintain client qualification standards and documentation',
 					'Team consistently had operations-best monthly bookkeeping KPIs',
+					'Collaborated with sales team and operations managers to create and maintain client qualification standards and documentation',
+					'Created team-specific KPIs and dashboards enabling team members to track their performance',
 				]
 			},
 			{
 				title: 'Senior Accounting Associate',
 				time: 'February 2015 to May 2016',
 				notes: [
-					'Held largest portfolio of clients by quantity and KPI measures',
 					'Helped shape company-wide bookkeeping standards as part of the Quality & Standards team',
-					'???',
+					'Created and implemented new process for operations bookkeepers to complete payroll adjustments',
+					'Held largest portfolio of clients by number and KPI measures',
 				]
 			}
 		]
