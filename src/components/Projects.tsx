@@ -16,7 +16,7 @@ const projects: Project[] = [
 	},
 	{
 		name: 'todo',
-		description: `mart to-do list that categorizes your to-dos for you. Built with <strong class='project-tool'>jQuery</strong>, <strong class='project-tool'>Express</strong>, <strong class='project-tool'>Knex/PostgreSQL</strong>.`,
+		description: `Smart to-do list that categorizes your to-dos for you. Built with <strong class='project-tool'>jQuery</strong>, <strong class='project-tool'>Express</strong>, <strong class='project-tool'>Knex/PostgreSQL</strong>.`,
 		imageSource: '/portfolio/assets/todo.png',
 		link: 'https://github.com/geoffmphillips/to-do-midterm',
 	},
