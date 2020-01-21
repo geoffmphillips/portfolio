@@ -16,12 +16,12 @@ const employers: Employment[] = [
 		name: "Idyaflow",
 		roles: [
 			{
-				title: 'Junior Web Developer',
+				title: 'Web Developer',
 				time: 'December 2018 to Current',
 				notes: [
-					'Designed and implemented payment/subscription management microservice',
+					'Designed and built payment/subscription management microservice. Implemented Ansible playbook to keep certain client data backed up to AWS for the client to download',
 					'Built mobile app with React Native',
-					'Implemented Ansible playbook to keep certain client data backed up to AWS for the client to download',
+					'Other tools used include React, Redux, jQuery, Node, Express, socket.io, MongoDB',
 				]
 			}
 		]
