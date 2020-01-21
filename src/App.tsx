@@ -6,7 +6,6 @@ import Home from './Home';
 import './App.css';
 
 const App: React.FC = () => {
-	
 	const handleDarkModeButtonClick = function(event: any) {
 		event.preventDefault();
 		
