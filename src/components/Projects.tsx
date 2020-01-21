@@ -24,7 +24,7 @@ const projects: Project[] = [
 		name: 'Chatty',
 		description: `Simple chat app for sending pictures and text. Built with <strong class='project-tool'>React</strong> and <strong class='project-tool'>websockets</strong>.`,
 		imageSource: '/portfolio/assets/chatty.png',
-		link: 'https://github.com/geoffmphillips/chatty',
+		link: 'https://github.com/geoffmphillips/chatty-app',
 	}
 ]
 
