@@ -33,7 +33,6 @@ a {
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
-	padding: 5px;
 	border-radius: 100%;
 	border: none;
 	background-color: rgba(255, 171, 15, 1);
@@ -57,7 +56,6 @@ a {
 }
 
 .download-button:active {
-	/* background-color: rgb(241, 118, 18); */
 	background-color: rgb(255, 99, 71);
 	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
 	transform: scale(0.98);
