@@ -16,7 +16,7 @@ const skills: Skill[] = [
 	},
 	{
 		name: "Systems & Databases",
-		tools: [ "SQL", "NoSQL", "PostgreSQL", "MongoDB", "Ansible", "Docker", "Git", "Github" ]
+		tools: [ "SQL", "NoSQL", "PostgreSQL", "MongoDB", "Ansible", "Git", "Github" ]
 	}
 ]
 
