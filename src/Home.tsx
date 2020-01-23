@@ -13,7 +13,7 @@ const Home: React.FC = () => (
 		<section>
 			<div className='description-container' data-testid="test-header">
 				<p className='description first'>
-					Hello world! My name is <strong className='emphasis-font'>Geoff</strong>. I build things. And I break things. I'm always learning. New tools, new approaches to problems, new skills. When I'm not coding being a dad keeps me busy. My two year old daughter has taught me more than I've taught her.
+					Hello, world! My name is <strong className='emphasis-font'>Geoff</strong>. I build things. And I break things. I'm always learning. New tools, new approaches to problems, new skills. When I'm not coding, being a dad keeps me busy. My two year old daughter has taught me more than I've taught her.
 				</p>
 			
 			</div>
